@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 /* style the body */
 body{
     font-family: Arial;
@@ -19,7 +17,7 @@ nav{
     background-color: #333;
 }
 /* Style the navigation bar links */
-nav a {
+nav a{
     color: white;
     padding: 14px 20px;
     text-decoration: none;
@@ -31,22 +29,21 @@ nav a:hover {
     color: black;
 }
 
-/* Sidebar/left column */
-aside {
-    flex: 1000%;
-    background-color: #f1f1f1;
-    padding: 40px;
-}
-section{
-    background-color: #f1f1f1;
-    padding: 40px;
-}
+main{
+    padding: 40px 40px;
+    height: 280px;
+ }  
 
 /* Footer */
 footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #19a4c7;
+    color: white;
+    
+}
+img{
+    height: 200px;
 }
 /* Responsive layout - when the screem */
 @media screen and (max-width: 700px) {

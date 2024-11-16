@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Page title</title>
+        <title>Formulario</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="./../css/estilo3.css">
     </head>
     <body>
+        <a href="./../index.html">INICIO</a>
         <section class="form-register">
-            <h4>Formulario de Registro</h4>
-            <form action="enviar.php" method="post">
-                <input class="controls" type="text" name="nombres" id="nombres" placeholder="ingrese su nombre"><br>
-                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="ingrese su apellidos"><br>
-                <input class="controls" type="email" name="correo" id="correo" placeholder="ingrese su correo"><br>
-                <input class="controls" type="text" name="password" id="contraseña" placeholder="ingrese su contraseña"><br>
-                <input class="controls" type="text" name="mensaje" id="mensaje" placeholder="ingrese su mensaje"><br>
+            <h1>FORMULARIO DE REGISTRO</h1>
+            <form action="enviar.php" method="get">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre"><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" id="email" placeholder="Escriba su correo"><br>
+
+                    <label for="telefono">Telèfono</label><br>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Escriba su telefono"><br>
+                    
+                    <label for="comentario">solicite mas infomacion</label><br>
+                    <textarea name="infomacion" id="comentario" cols="35" rows="10"></textarea><br>
+
+                </fieldset>
+                
                 <p>Estoy de Acuerdo Con <a href="./terminosyc.html">Terminos y condiciones</a></p>
                 <input class="botons" type="submit" value="Registrar">
                 <p><a href="#">¿Ya Tengo Cuenta?</a></p>
@@ -22,4 +34,4 @@
         </section>
    
     </body>
-</html>
+</html> 
